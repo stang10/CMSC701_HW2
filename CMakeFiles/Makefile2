@@ -4552,7 +4552,6 @@ sdsl-lite/test/CMakeFiles/rank-support-test_bit-vec.CRAFTED-MAT-SELECT.dir/clean
 # All Build rule for target.
 sdsl-lite/test/CMakeFiles/rank-support-test.dir/all: sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.512.1.r.432.dir/all
 sdsl-lite/test/CMakeFiles/rank-support-test.dir/all: sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.1024.1.r.898.dir/all
-sdsl-lite/test/CMakeFiles/rank-support-test.dir/all: sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.2048.1.r.5432.dir/all
 sdsl-lite/test/CMakeFiles/rank-support-test.dir/all: sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.0.1.0.dir/all
 sdsl-lite/test/CMakeFiles/rank-support-test.dir/all: sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.1.1.0.dir/all
 sdsl-lite/test/CMakeFiles/rank-support-test.dir/all: sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.1000000.1.0.dir/all
@@ -4572,6 +4571,7 @@ sdsl-lite/test/CMakeFiles/rank-support-test.dir/all: sdsl-lite/test/CMakeFiles/r
 sdsl-lite/test/CMakeFiles/rank-support-test.dir/all: sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.64.1.r.222.dir/all
 sdsl-lite/test/CMakeFiles/rank-support-test.dir/all: sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.128.1.r.73.dir/all
 sdsl-lite/test/CMakeFiles/rank-support-test.dir/all: sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.256.1.r.4887.dir/all
+sdsl-lite/test/CMakeFiles/rank-support-test.dir/all: sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.2048.1.r.5432.dir/all
 sdsl-lite/test/CMakeFiles/rank-support-test.dir/all: sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.4096.1.r.793.dir/all
 sdsl-lite/test/CMakeFiles/rank-support-test.dir/all: sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.8192.1.r.1043.dir/all
 sdsl-lite/test/CMakeFiles/rank-support-test.dir/all: sdsl-lite/test/CMakeFiles/rank-support-test_int-vec.1000000.1.r.815.dir/all
