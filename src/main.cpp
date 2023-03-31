@@ -589,6 +589,8 @@ int main()
 
     cout << "-----Testing for Task 3-----" << endl;
     cout << "Sparse Array Size: 1000" << endl;
+    bit_vector t1(1000, 0);
+    cout << "Bitvector Size 1000 byte size: " << size_in_bytes(t1) << endl;
     sparse_array sa = sparse_array();
     cout << "1%" << endl;
     sa.create(1000);
@@ -645,6 +647,8 @@ int main()
     cout << "Overhead: " << sa3.overhead() << " bits\n" << endl;
 
     cout << "Sparse Array Size: 10000" << endl;
+    t1 = bit_vector(10000, 0);
+    cout << "Bitvector Size 10000 byte size: " << size_in_bytes(t1) << endl;
     sparse_array sa4 = sparse_array();
     cout << "1%" << endl;
     sa4.create(10000);
@@ -701,6 +705,8 @@ int main()
     cout << "Overhead: " << sa6.overhead() << " bits\n" << endl;
 
     cout << "Sparse Array Size: 100000" << endl;
+    t1 = bit_vector(100000, 0);
+    cout << "Bitvector Size 100000 byte size: " << size_in_bytes(t1) << endl;
     sparse_array sa7 = sparse_array();
     cout << "1%" << endl;
     sa7.create(100000);
@@ -757,6 +763,8 @@ int main()
     cout << "Overhead: " << sa9.overhead() << " bits\n" << endl;
 
     cout << "Sparse Array Size: 1000000" << endl;
+    t1 = bit_vector(1000000, 0);
+    cout << "Bitvector Size 1000000 byte size: " << size_in_bytes(t1) << endl;
     sparse_array sa10 = sparse_array();
     cout << "1%" << endl;
     sa10.create(1000000);
