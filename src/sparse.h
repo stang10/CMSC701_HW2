@@ -126,6 +126,9 @@ class sparse_array
             finalized = stoll(tmp);
             InputFile.close();
         }
+        uint64_t overhead() {
+            return s.overhead();
+        }
     private: 
         bit_vector b;
         std::vector<string> strings;

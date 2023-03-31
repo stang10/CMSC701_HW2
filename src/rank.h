@@ -12,7 +12,7 @@ using namespace sdsl;
 class rank_supp {
     public: 
         rank_supp(){
-            
+
         }
         rank_supp(bit_vector* bv){
             b = bv; 
@@ -45,7 +45,7 @@ class rank_supp {
                     sub++;
                 }
                 if ((i+1) < ccount) {
-                    chunks[i+1] = strack;
+                    chunks[i+1] = chunks[i] + strack;
                 }
             }
 
@@ -57,22 +57,25 @@ class rank_supp {
             // }
         }
         uint64_t rank1(uint64_t i) {
-            uint64_t chunk = floor(double(i)/pow(log2(double(n)),2));
+            uint64_t chunk = floor(double(i)/clen);
             uint64_t subchunk = ((i-(chunk*clen))/slen);
             uint64_t idx = (chunk*clen) + (subchunk*slen);
+
             uint64_t rank = chunks[chunk];
+            //cout << " Rank chunk: " << rank;
             if (subchunk != 0){
                 rank = rank + subchunks[chunk*scount + (subchunk-1)];
                 //cout << " Rank subchunk: " << rank;
             }
             rank = rank + std::popcount((*b).get_int(idx, (i-idx)));
+            //cout << " Rank get_int: " << rank << endl;;
             return rank; 
         }
         uint64_t overhead(){
-            std::cout << "chunk: " << ccount << " " << cbits << std::endl;
-            std::cout << "subchunk: " << scount*ccount << " " << sbits << std::endl;
-            std::cout << "chunk bytes " << size_in_bytes(chunks) << std::endl;
-            std::cout << "subchunk bytes " << size_in_bytes(subchunks) << std::endl;
+            // std::cout << "chunk: " << ccount << " " << cbits << std::endl;
+            // std::cout << "subchunk: " << scount*ccount << " " << sbits << std::endl;
+            // std::cout << "chunk bytes " << size_in_bytes(chunks) << std::endl;
+            // std::cout << "subchunk bytes " << size_in_bytes(subchunks) << std::endl;
             return (size_in_bytes(chunks) + size_in_bytes(subchunks))*8; 
         }
         void save(string& fname) {
@@ -172,6 +175,9 @@ class rank_supp {
         }
         bit_vector* get_bv(){
             return b; 
+        }
+        int_vector<> get_chunks(){
+            return chunks; 
         }
     private:
         bit_vector* b;

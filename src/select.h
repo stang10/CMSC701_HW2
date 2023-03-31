@@ -19,7 +19,7 @@ class select_supp {
             rank_ptr = r;
         }
         uint64_t binary_rank(uint64_t x, uint64_t left, uint64_t right){
-            if (left > right) {
+            if ((right == -1) || left > right) {
                 return -1; 
             } 
             else {
