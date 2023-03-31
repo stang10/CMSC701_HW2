@@ -1,6 +1,6 @@
 # CMSC701_HW2
 
-This project was written in the C++ programming language. 
+This project was written in the C++ programming language. The project is found at: https://github.com/stang10/CMSC701_HW2. 
 
 For this project, I have made use of the Succinct Data Structure Library 2.0 (sdsl-lite) found [here](https://github.com/simongog/sdsl-lite). Since there is already a github repository for the sdsl-lite library, I was unable to add it to my own repository. As such, you will need download the sdsl-lite library for yourself. 
 
